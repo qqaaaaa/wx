@@ -1,6 +1,9 @@
 {
   "pages":[
+    "pages/first/first",
+    "pages/classify/classify",
     "pages/car/car",
+    "pages/people/people",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -13,21 +16,29 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/first/first",
+        "iconPath":"pages/images/yemian.png",
+        "selectedIconPath":"pages/images/yemian1.png",
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/classify/classify",
+        "iconPath": "pages/images/fenlei.png",
+        "selectedIconPath": "pages/images/fenlei1.png",
         "text": "分类"
       }
       ,
       {
         "pagePath": "pages/car/car",
+        "iconPath": "pages/images/gouwuche.png",
+        "selectedIconPath": "pages/images/gouwuche1.png",
         "text": "购物车"
       }
       ,
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/people/people",
+        "iconPath": "pages/images/geren.png",
+        "selectedIconPath": "pages/images/geren1.png",
         "text": "个人中心"
       }
     ]
