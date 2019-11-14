@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/car/car",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "分类"
+      }
+      ,
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车"
+      }
+      ,
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "个人中心"
+      }
+    ]
+  }
+}
