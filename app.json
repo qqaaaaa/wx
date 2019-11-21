@@ -9,7 +9,16 @@
     "pages/orders/orders",
     "pages/addrlist/addrlist",
     "pages/register/register",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/discount/discount",
+    "pages/shoucang/shoucang",
+    "pages/user/user",
+    "pages/userupd/userupd",
+    "pages/usergai/usergai",
+    "pages/city/city",
+    "pages/message/message",
+    "pages/cityadd/cityadd"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -44,6 +53,9 @@
         "text": "个人中心"
       }
     ]
+
   },
   "sitemapLocation": "sitemap.json"
-}
+
+  }
+

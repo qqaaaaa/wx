@@ -1,0 +1,31 @@
+<!--pages/usergai/usergai.wxml-->
+<!--pages/userupd/userupd.wxml-->
+
+
+
+<form bindsubmit='setForm'>
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>用户名:</text>
+<input type="text" name="name" placeholder='请输入有户名' style='width:325px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>密码:</text>
+<input type="text" name="pwd" placeholder='请输入密码' style='width:325px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>邮箱:</text>
+<input type="text" name="email" placeholder='请输入邮箱' style='width:325px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+<view class="section">
+  <view class="section__title" style='font-size:20px;margin-left:20px'>生日</view>
+  <picker mode="date" name="birthday"value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker" style="margin-left:20px">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
+<button form-type='submit' style='width:75%;height:45px;background-color:#0EBE0E;color:white;float:left;margin-left:45px;margin-top:60px'>确认修改</button>
+</form>
+

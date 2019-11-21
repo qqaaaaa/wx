@@ -1,0 +1,26 @@
+<!--pages/user/user.wxml-->
+<view class='top'>
+<text style='font-size:20px;float:left;margin-left:127px;margin-top:5px'>编辑个人资料</text>
+</view>
+<view wx:for='{{that}}'>
+<view class='topa'>
+<text style='float:left;margin-left:17px;margin-top:32px'>头像</text>
+<image src='{{item.buyer_header}}' style='width:74px;height:74px;border-radius:80px;float:right;margin-right:20px;margin-top:5px'></image>
+</view>
+<view class='topb'></view>
+<view class='topc'>
+<text style='float:left;margin-left:17px;margin-top:15px'>昵称</text>
+<text style='float:left;margin-right:45px;margin-top:15px;float:right'>{{item.buyer_name}}</text>
+</view>
+<view class='topd'>
+<text style='float:left;margin-left:17px;margin-top:15px'>年龄</text>
+<text style='float:left;margin-right:45px;margin-top:15px;float:right'>{{item.buyer_age}}</text>
+</view>
+<view class='tope'>
+<text style='float:left;margin-left:17px;margin-top:15px'>手机号</text>
+<text style='float:left;margin-right:45px;margin-top:15px;float:right'>未绑定</text>
+</view>
+</view>
+<view class='topf' bindtap='userupd'>
+<button style='background-color:#0EBE0E;margin-top:80px;float:left;width:80%;color:white;margin-left:40px'>点击修改个人信息</button>
+</view>

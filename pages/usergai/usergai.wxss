@@ -1,0 +1,41 @@
+.top{
+  margin-top: 20px;
+}
+.code{
+ width:120px;
+ height:40px;
+ background-color:#0EBE0E;
+ color:white;
+ float:left;
+ margin-left:230px;
+ margin-top:-40px;
+}
+.time_text{
+  text-align: center;
+}
+.showDates{
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 36rpx;
+  z-index: 9999;
+}
+.time_title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.view_picker{
+  height: 300rpx;
+}
+.view_picker_text{
+  color: #000;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
