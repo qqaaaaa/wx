@@ -12,12 +12,14 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
-	"appid": "wxe5ef1b683b9d7d64",
+	"appid": "wx6f94d628a639e65a",
 	"projectname": "%E5%95%86%E5%9F%8E",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

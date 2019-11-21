@@ -1,2 +1,40 @@
-<!--pages/first/first.wxml-->
-<text>pages/first/first.wxml</text>
+<view>
+  <swiper indicator-dots="{{indicatorDots}}" 
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="category">
+  <view class="category_item" wx:for="{{iconArray}}">
+    <view class="category_item_wrap">
+      <view class="icon_wrap">
+        <navigator url="/pages/classifyGoods/classifyGoods?classifyId=2"><image src="{{item.img}}" class="index_icon" style="width: 42px;height:42px;float:top;margin-left:32px;"></image></navigator> 
+      </view>
+      <view class="category_item_text">
+        <text>{{item.clname}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+	<view class="title-line">
+		<view class="title-name">- BOUTIQUE RECOMMEND -</view>
+		<view class="title-name-bottom">精选推荐</view>
+	</view>
+  
+  	<view class="content">
+		<block wx:for="{{product}}">
+    <navigator url="/pages/details/details?id={{item.id}}&c_id={{item.c_id}}">
+			<view class="content-cell">
+				<image src="{{item.image}}" mode="scaleToFill" binderror="imageError"/>
+				<text class="describe">{{item.pstore}}</text>
+				<view style="color: red; font-size: 8pt;" class="price-now">$ {{item.monry}}</view>
+			</view>
+      </navigator>
+		</block>
+	</view>
+
+  <view class="footer" bindtap="goIndexPage">北京八维有限公司</view>
