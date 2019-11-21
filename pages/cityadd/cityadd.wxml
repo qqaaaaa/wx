@@ -1,0 +1,16 @@
+<!--pages/cityadd/cityadd.wxml-->
+<form bindsubmit='setForm'>
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>收件人:</text>
+<input type="text" name="name" placeholder='请输入收件人' style='width:325px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>手机号:</text>
+<input type="text" name="phone" placeholder='请输入手机号' style='width:325px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>地址:</text>
+<input type="text" name="address" bindtap='onChangeAddress' value='{{chooseAddress}}' placeholder='请输入地址' style='width:325px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+<button form-type='submit' style='width:75%;height:45px;background-color:#0EBE0E;color:white;float:left;margin-left:45px;margin-top:60px'>确认添加</button>
+</form>

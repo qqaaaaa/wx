@@ -1,0 +1,14 @@
+<!--pages/city/city.wxml-->
+<view class='top'>
+<text style='float:left;margin-top:50px;font-size:18px;color:#4D4D4D'>收货地址</text>
+</view>
+<view class="middle">
+<view wx:for='{{shoucang}}'>
+<view style='width:95%;height:130px;background-color:white;margin-left:10px;margin-top:20px;float:left'>
+<view><image src='../images/yemian.png' style='width:90px;height:90px'></image></view>
+<view style='width:220px;height:65px;float:right;font-size:18px'>{{item.user_address}}</view>
+<view style='width:100px;height:40px;float:left;margin-top:-150px;margin-left:140px;font-size:20px;color:orange'>{{item.consignee_name}}</view>
+</view>
+</view>
+<button bindtap='cityadd' style='width:80%;height:50px;background-color:#0EBE0E;color:white;margin-top:30px;float:left;margin-left:38px'>添加收货地址</button>
+</view>

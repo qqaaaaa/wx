@@ -1,1 +1,27 @@
-/* pages/people/people.wxss */
+.top{
+  width:100%;
+  height:230px;
+  background-color:#FF6944;
+}
+.middle{
+  width:100%;
+  height:30px;
+  
+}
+.hidden{
+  width:100%;
+  height:80px;
+ 
+}
+.hid{
+  width:100%;
+  height:60px;
+  background-color:white;
+  border:1px black;
+}
+.hida{
+  width:100%;
+  height:60px;
+  background-color:#EEEEEE;
+  border:1px black;
+}

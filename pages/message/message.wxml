@@ -1,0 +1,14 @@
+<!--pages/message/message.wxml-->
+<view class='top'>
+<text style='float:left;margin-top:50px;font-size:18px;color:#4D4D4D'>我的信息</text>
+</view>
+<view class="middle">
+<view wx:for='{{shoucang}}'>
+<view style='width:95%;height:130px;background-color:white;margin-left:10px;margin-top:20px;float:left'>
+<view><image src='../images/geren.png' style='width:70px;height:70px'></image></view>
+<view style='width:220px;height:65px;float:right;font-size:18px'>{{item.message}}</view>
+<view style='width:200px;height:40px;float:left;margin-top:-130px;margin-left:140px;font-size:20px;color:orange'>您收到了一条新消息</view>
+</view>
+</view>
+<button bindtap="mess" style='width:75%;height:45px;background-color:#0EBE0E;color:white;float:left;margin-left:45px;margin-top:60px'>我以阅读</button>
+</view>

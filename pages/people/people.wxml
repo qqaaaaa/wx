@@ -1,2 +1,61 @@
-<!--pages/people/people.wxml-->
-<text>pages/people/people.wxml</text>
+<view class='top'>
+<text style='color:white;font-size:18px;margin-left:145px;margin-top:20px'>个人中心</text>
+<view wx:for='{{that}}' bindtap="user">
+<image src='{{item.buyer_header}}' style='width:120px;height:120px;margin-top:20px;margin-left:125px;border-radius:130px'></image>
+</view>
+
+
+</view>
+<view class='middle'>
+<text style='color:glue'>我的订单</text><text style="float:right;color:glue">查看全部订单</text>
+</view>
+<view class="hidden">
+<view style='width:89px;height:80px;float:left;margin-left:15px'>
+<image src='../images/fukuan.png' style='width:70px;height:70px'></image>
+</view>
+<view style='width:89px;height:80px;float:left'>
+<image src='../images/pingjia.png' style='width:70px;height:70px'></image>
+</view>
+<view style='width:89px;height:80px;float:left'>
+<image src='../images/shouhuo.png' style='width:70px;height:70px'></image>
+</view>
+<view style='width:89px;height:80px;float:left'>
+<image src='../images/shouhou.png' style='width:70px;height:70px'></image>
+</view>
+</view>
+<view class='hida' bindtap="discount">
+<view style='margin-top:13px;float:left'>
+<image src='../images/yemian1.png' style='width:30px;height:30px'></image>
+<text style="color:glue;font-size:20px;margin-left:20px">优惠券</text>
+</view>
+</view>
+<view class='hid' bindtap="shoucang">
+<view style='margin-top:13px;float:left'>
+<image src='../images/gouwuche1.png' style='width:30px;height:30px'></image>
+<text style="color:glue;font-size:20px;margin-left:20px">我的收藏</text>
+</view>
+</view>
+<view class='hida'>
+<view style='margin-top:13px;float:left' bindtap='city'>
+<image src='../images/geren1.png' style='width:30px;height:30px'></image>
+<text style="color:glue;font-size:20px;margin-left:20px">收货地址</text>
+</view>
+</view>
+
+<view class='hid' bindtap='message'>
+<view style='margin-top:13px;float:left'>
+<image src='../images/yemian1.png' style='width:30px;height:30px'></image>
+
+<view style='width:20px;height:20px;background-color:red;color:white;font-size:15px;border-radius:10px;float:right'><text style='margin-left:6px'>{{that1}}</text></view>
+
+<text style="color:glue;font-size:20px;margin-left:20px">我的消息</text>
+</view>
+</view>
+
+
+<view class='hida'>
+<view style='margin-top:13px;float:left'>
+<image src='../images/fenlei1.png' style='width:30px;height:30px'></image>
+<text style="color:glue;font-size:20px;margin-left:20px">在线客服</text>
+</view>
+</view>

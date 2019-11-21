@@ -1,0 +1,12 @@
+.top{
+  margin-top: 20px;
+}
+.code{
+ width:120px;
+ height:40px;
+ background-color:#0EBE0E;
+ color:white;
+ float:left;
+ margin-left:230px;
+ margin-top:-40px;
+}

@@ -1,0 +1,15 @@
+<!--pages/shoucang/shoucang.wxml-->
+
+<view class='top'>
+<text style='float:left;margin-top:50px;font-size:18px;color:#4D4D4D'>我的收藏</text>
+</view>
+<view class="middle">
+<view wx:for='{{shoucang}}'>
+<view style='width:95%;height:130px;background-color:white;margin-left:10px;margin-top:20px;float:left'>
+<view><image src='{{item.image}}' style='width:130px;height:130px'></image></view>
+<view style='width:220px;height:65px;float:right;margin-top:-130px;font-size:18px'>{{item.pstore}}</view>
+<view style='width:100px;height:40px;float:left;margin-top:-50px;margin-left:140px;font-size:18px;color:red'>￥{{item.monry}}</view>
+</view>
+</view>
+
+</view>

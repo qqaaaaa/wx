@@ -1,0 +1,20 @@
+<!--pages/userupd/userupd.wxml-->
+<form bindsubmit='getForm'>
+
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>手机号:</text>
+<input type="text" name="name" placeholder='请输入手机号' style='width:210px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+<button formType="submit" class='code'>获取验证码</button>
+
+</form>
+
+
+<form bindsubmit='setForm'>
+<view class='top'>
+<text style='font-size:20px;margin-left:20px'>验证码:</text>
+<input type="text" name="code" placeholder='请输入验证码' style='width:325px;height:40px;border-bottom:1px solid #ddd;font-size:20px;margin-left:20px'></input>
+</view>
+
+<button form-type='submit' style='width:75%;height:45px;background-color:#0EBE0E;color:white;float:left;margin-left:45px;margin-top:60px'>开始验证</button>
+</form>

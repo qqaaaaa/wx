@@ -1,0 +1,11 @@
+<!--pages/discount/discount.wxml-->
+
+<view class='top'>
+<text style='float:left;margin-top:50px;font-size:18px;color:#4D4D4D'>待使用</text>
+</view>
+<view class="middle">
+<view  wx:for="{{youhui}}">
+<image src='../images/discount.png' style='width:96%;height:110px;margin-top:20px;margin-left:10px'></image>
+<text style='margin-top:-70px;margin-left:30px;float:left;z-index:9999;position: relative;font-size:18px;color:white'>{{item.discount_name}}</text>
+</view>
+</view>
