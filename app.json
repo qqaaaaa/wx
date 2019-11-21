@@ -1,14 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/car/car",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/classify/classify"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
@@ -17,19 +18,18 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/classify/classify",
         "text": "分类"
-      }
-      ,
+      },
       {
         "pagePath": "pages/car/car",
         "text": "购物车"
-      }
-      ,
+      },
       {
         "pagePath": "pages/logs/logs",
         "text": "个人中心"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap90.json"
 }
