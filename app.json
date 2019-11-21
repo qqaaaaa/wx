@@ -1,24 +1,26 @@
 {
-  "pages":[
+  "pages": [
     "pages/first/first",
     "pages/classify/classify",
-    "pages/car/car",
+    "pages/cars/cars",
     "pages/people/people",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/orders/orders",
+    "pages/addrlist/addrlist"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/first/first",
-        "iconPath":"pages/images/yemian.png",
-        "selectedIconPath":"pages/images/yemian1.png",
+        "iconPath": "pages/images/yemian.png",
+        "selectedIconPath": "pages/images/yemian1.png",
         "text": "首页"
       },
       {
@@ -26,15 +28,13 @@
         "iconPath": "pages/images/fenlei.png",
         "selectedIconPath": "pages/images/fenlei1.png",
         "text": "分类"
-      }
-      ,
+      },
       {
-        "pagePath": "pages/car/car",
+        "pagePath": "pages/cars/cars",
         "iconPath": "pages/images/gouwuche.png",
         "selectedIconPath": "pages/images/gouwuche1.png",
         "text": "购物车"
-      }
-      ,
+      },
       {
         "pagePath": "pages/people/people",
         "iconPath": "pages/images/geren.png",
@@ -42,5 +42,6 @@
         "text": "个人中心"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

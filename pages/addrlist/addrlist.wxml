@@ -1,0 +1,12 @@
+<!--pages/addrlist/addrlist.wxml-->
+
+<text style="font-size:30px;">我的收货地址</text>
+<view wx:for="{{list}}" >
+  <view class="qq" bindtap="shoose" data-name="{{item.consignee_name}}"  data-phone="{{item.consignee_phone}}"  data-address="{{item.consignee_address}}">
+    收货人：<text>{{item.consignee_name}}</text>
+    <text>{{item.consignee_phone}}</text>
+    <text class="addr">收货地址：{{item.consignee_address}}</text>
+  </view>
+
+</view>
+<button bindtap='cityadd' style='width:80%;height:50px;background-color:#0EBE0E;color:white;margin-top:30px;float:left;margin-left:38px'>添加收货地址</button>
