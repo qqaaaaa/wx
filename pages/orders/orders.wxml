@@ -20,7 +20,7 @@
   </view>
   <view class="group-ft">
     <text class="font-color-999"><text style="font-size:20px;">订单总额：</text>
-    <text class="font-color-c24e4e" style="font-size:40rpx; margin-left:24rpx;" name='money'>¥{{money}}</text></text>
+    <text class="font-color-c24e4e" style="font-size:40rpx; margin-left:24rpx;">¥<input name='money' value="{{money}}" placeholder="{{money}}"></input></text></text>
   </view>
 
 
