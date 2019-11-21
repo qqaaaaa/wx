@@ -1,0 +1,46 @@
+<scroll-view scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="brandShow">
+  <view class="goods" style="width:100%">
+    <view class="img_item">
+      <view wx:for="{{goods}}" wx:key="id" >
+      <navigator url="/pages/details/details?id={{item.id}}&c_id={{item.c_id}}">
+      <view class="item_info"  data-goodsid="{{item.id}}">
+      
+      <image src="{{item.image}}" style="width:100%;height:150px"></image>
+      </view>
+            <view class="product-name">
+              {{item.pstore}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.monry}}</p>    
+            </view></navigator>
+        
+      </view>
+    </view>
+    <view class="img_item">
+      <view wx:for="{{goods1}}" wx:key="id" >
+      <navigator url="/pages/details/details?id={{item.id}}&c_id={{item.c_id}}">
+      <view class="item_info"  data-goodsid="{{item.id}}">
+      
+        <image src="{{item.image}}" style="width:100%;height:150px"></image>
+      </view>
+            <view class="product-name">
+              {{item.pstore}}
+            </view>
+            <view class="product-price-wrap">
+              <p class="product-price-new">￥{{item.monry}}</p>    
+            </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+ <view style="display:none">
+  <image wx:for="{{brandGoods}}" wx:key="id" id="{{item.id}}" src="{{item.imgUrl}}" bindload="onImageLoad1"></image>
+</view> 
+
+  <view class="weui-loadmore" hidden="{{hidden}}">
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">努力加载中</view>
+  </view>   
+
