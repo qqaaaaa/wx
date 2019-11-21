@@ -6,13 +6,10 @@
     "pages/people/people",
     "pages/index/index",
     "pages/logs/logs",
-<<<<<<< HEAD
     "pages/orders/orders",
-    "pages/addrlist/addrlist"
-=======
+    "pages/addrlist/addrlist",
     "pages/register/register",
     "pages/login/login"
->>>>>>> dedfaf67b5a284468149301d34555af331bc47dc
   ],
   "window": {
     "backgroundTextStyle": "light",
