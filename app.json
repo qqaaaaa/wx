@@ -1,17 +1,17 @@
 {
-  "pages":[
-    "pages/first/first",
-    "pages/classify/classify",
+  "pages": [
+   "pages/first/first",
     "pages/car/car",
     "pages/people/people",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/classify/classify"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
@@ -23,18 +23,17 @@
       },
       {
         "pagePath": "pages/classify/classify",
+
         "iconPath": "pages/images/fenlei.png",
         "selectedIconPath": "pages/images/fenlei1.png",
         "text": "分类"
-      }
-      ,
+      },
       {
         "pagePath": "pages/car/car",
         "iconPath": "pages/images/gouwuche.png",
         "selectedIconPath": "pages/images/gouwuche1.png",
         "text": "购物车"
-      }
-      ,
+      },
       {
         "pagePath": "pages/people/people",
         "iconPath": "pages/images/geren.png",
@@ -42,5 +41,6 @@
         "text": "个人中心"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap90.json"
 }

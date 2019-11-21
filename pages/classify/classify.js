@@ -5,14 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    barne:[],
+    curNav: 1,
+    curIndex: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var that = this
+    // console.log(c_id)
+    wx.request({
+      url: 'http://www.shop.com/api/classify',
+      method: 'get',
+      dataType: 'json',
+      success: function (e) {
+        console.log(e.data.data)
+        that.setData({
+          // barne:tj,
+          barne: e.data.data
+        })
+      }
+    })
+  },
+  switchRightTab: function (e) {
+    // 获取item项的id，和数组的下标值  
+    let id = e.target.dataset.id,
+      index = parseInt(e.target.dataset.index);
+    // 把点击到的某一项，设为当前index  
+    this.setData({
+      curNav: id,
+      curIndex: index
+    })
   },
 
   /**
