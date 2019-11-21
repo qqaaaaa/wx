@@ -18,7 +18,6 @@
     "pages/city/city",
     "pages/message/message",
     "pages/cityadd/cityadd"
-
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,6 +35,7 @@
       },
       {
         "pagePath": "pages/classify/classify",
+
         "iconPath": "pages/images/fenlei.png",
         "selectedIconPath": "pages/images/fenlei1.png",
         "text": "分类"

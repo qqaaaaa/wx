@@ -8,7 +8,19 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"bundle": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.3",
@@ -44,13 +56,7 @@
 		"miniprogram": {
 			"current": -1,
 			"list": [
-				{
-					"id": 1,
-					"name": "购物车",
-					"pathName": "pages/cars/cars",
-					"query": "",
-					"scene": null
-				},
+	
 				{
 					"id": -1,
 					"name": "pages/addrlist/addrlist",
@@ -58,7 +64,10 @@
 					"query": "",
 					"scene": null
 				}
+		
+
 			]
+
 		}
 	}
 }
